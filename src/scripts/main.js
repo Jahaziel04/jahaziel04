@@ -1,7 +1,5 @@
-var $ = require('jquery');
+$( document ).ready(function(){
 
-
-//Al precionar el toggle le agrega a su padre la clase active
-//$(".toggle").on("click", function() {
-  //$(".toggle").parent().toggleClass('active');
-//});
+	$(".button-collapse").sideNav();
+	
+})

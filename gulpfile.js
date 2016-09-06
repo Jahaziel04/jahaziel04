@@ -12,16 +12,16 @@ var uglify = require('gulp-uglify');
 var config = {
 	styles: {
     	main: './src/main.styl',
-    	watch: './src/**/*.styl',
+    	//watch: './src/**/*.styl',
     	output: './build/css'
   },
   	html: {
   		main: './src/*.jade',
-  		watch: './src/**/*.jade'
+  		//watch: './src/**/*.jade'
   	},
   	scripts: {
   		main: './src/scripts/main.js',
-  		watch: './src/scripts/**/*.js',
+  		//watch: './src/scripts/**/*.js',
   		output: './build/js'
   	}
 
@@ -63,14 +63,14 @@ gulp.task('build:js', function() {
 		.pipe(gulp.dest(config.scripts.output))
 	});
 
-gulp.task('watch', function() {
-	gulp.watch(config.scripts.watch, ['build:js']);
-	gulp.watch(config.styles.watch, ['build:css']);
-	gulp.watch(config.html.watch, ['build:html']);
+//gulp.task('watch', function() {
+//	gulp.watch(config.scripts.watch, ['build:js']);
+//	gulp.watch(config.styles.watch, ['build:css']);
+//	gulp.watch(config.html.watch, ['build:html']);
 
-})
+//});
 
 
 
 gulp.task('build', ['build:css','build:html','build:js']);
-gulp.task('default', ['server','build', 'watch']);
+gulp.task('default', ['server','build']);
