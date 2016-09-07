@@ -2405,8 +2405,9 @@ al tamaño de pantalla
 }
 
 .card .card-title {
-  font-size: 24px;
-  font-weight: 300;
+  font-size: 14px
+  font-weight: 500
+  color gris
 }
 
 .card .card-title.activator {

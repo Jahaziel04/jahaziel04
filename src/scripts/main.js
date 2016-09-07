@@ -5,11 +5,8 @@ $( document ).ready(function(){
 		accordion : false
 	});
 	$('.materialboxed').materialbox();
-	
-	$(".owl-carousel").owlCarousel({
 
+	//$(".owl-carousel").owlCarousel({
 
-
-	});
 
 });
