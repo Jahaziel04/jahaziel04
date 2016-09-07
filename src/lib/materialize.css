@@ -1279,15 +1279,15 @@ input[type=range] + .thumb {
   width: 90%;
 }
 
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 720px) {
   .container {
     width: 85%;
   }
 }
 
-@media only screen and (min-width: 993px) {
+@media only screen and (min-width: 1024px) {
   .container {
-    width: 70%;
+    width: 93%;
   }
 }
 
@@ -1564,7 +1564,7 @@ input[type=range] + .thumb {
   left: 100%;
 }
 
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 720px) {
   .row .col.m1 {
     width: 8.3333333333%;
     margin-left: auto;
@@ -1747,7 +1747,7 @@ input[type=range] + .thumb {
   }
 }
 
-@media only screen and (min-width: 993px) {
+@media only screen and (min-width: 1024px) {
   .row .col.l1 {
     width: 8.3333333333%;
     margin-left: auto;
@@ -2601,7 +2601,7 @@ al tamaño de pantalla
   #toast-container {
     top: 10%;
     right: 7%;
-    max-width: 86%;
+    max-width: 70%;
   }
 }
 

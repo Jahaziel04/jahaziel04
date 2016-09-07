@@ -1,34 +1,42 @@
 ///CLASES DE UTILIDAD
 
-.jflex
-	display: flex
-	align-items center
-
-
 
 ////// IMG SIZE ////////
 ////////////////////////	
 .img-full
 	width: 100%
+///img-25 uso unico para el logo de los tres lenguajes	
 .img-25
 	width: 25%
+	@media only screen and (min-width:1025px)
+		width 0
+		display none
+.img-graph
+	width 100%
+	@media only screen and (min-width:540px)
+		width 474px
 
 ////////////////////////
 
 
-@media only screen and (max-width:992px)
-	nav .brand-avatar
-		left: 90%;
-		transform: translateX(-50%);
-		position: absolute;
-		color: #fff;
-		display: inline-block;
-		font-size: 2.1rem;
-		padding: 0;
-		white-space: nowrap;
+.jflex
+	display: flex
+	align-items center
+
+.relative
+	position: relative
 
 .absolute
 	position absolute
+
+.fix-lap
+	width: 300px
+	height: 193px
+	margin: 0 auto
+	display none
+	overflow hidden
+	@media only screen and (min-width:1025px)
+		display block
 	
 
 /////// LANDING-PAGE //////
@@ -38,10 +46,15 @@
 	&-one
 		display: block;
 		padding: 1em 0;
-		background-image: url(../img/logo-pendant.png)
 		background-repeat: no-repeat
 		background-size: 62px
 		background-position: right top
+		background-image: url(../img/logo-pendant.png)
+		@media only screen and (min-width:1025px)
+			background-image: url(../img/landing-desk.png)
+			background-size: 567px
+			background-position right -21px
+			
 	&-two
 		display: block
 		background-image: url(../img/graph-decoration.png)
@@ -51,6 +64,11 @@
 	
 	&-three
 		display block
+		background-image: url(../img/graph-decoration-up.png)
+		background-repeat no-repeat
+		background-position left bottom
+		background-size: 12%
+		padding-bottom 50px
 
 		
 ///////////////////////////
@@ -65,10 +83,3 @@
 		font-weight 300
 		//margin 1.46rem 0 1.168rem
 		padding 0 1rem 1rem !important
-		
-.imagen-pru
-	width 300px
-	height: 250px
-	margin 0 auto
-	background-color: red
-	
