@@ -4,4 +4,12 @@ $( document ).ready(function(){
 	$('.collapsible').collapsible({
 		accordion : false
 	});
+	$('.materialboxed').materialbox();
+	
+	$(".owl-carousel").owlCarousel({
+
+
+
+	});
+
 });
