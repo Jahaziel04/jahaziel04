@@ -1225,6 +1225,7 @@ nav ul a span.badge {
 
 .center, .center-align {
   text-align: center;
+  margin: 0 auto
 }
 
 .left {

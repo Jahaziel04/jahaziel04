@@ -13,8 +13,7 @@
 		display none
 .img-graph
 	width 100%
-	@media only screen and (min-width:540px)
-		width 474px
+	max-width 500px
 
 ////////////////////////
 
@@ -54,6 +53,10 @@
 			background-image: url(../img/landing-desk.png)
 			background-size: 567px
 			background-position right -21px
+			@media only screen and (min-width:1300px)
+				background-image: url(../img/landing-desk-big.png), url(../img/icon-pendant.png)
+				background-size: 596px, 47px
+				background-position right -7px, center -3px
 			
 	&-two
 		display: block
@@ -61,6 +64,7 @@
 		background-repeat no-repeat
 		background-position 100% bottom
 		background-size: 100%
+		padding 20px 0
 	
 	&-three
 		display block
@@ -68,7 +72,13 @@
 		background-repeat no-repeat
 		background-position left bottom
 		background-size: 12%
-		padding-bottom 50px
+		padding 20px 0
+
+///////////////////////////
+.line-style
+	border-bottom 5px solid #18adf1
+
+
 
 		
 ///////////////////////////
