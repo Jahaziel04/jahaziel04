@@ -5,6 +5,7 @@ $( document ).ready(function(){
 		accordion : false
 	});
 	$('.materialboxed').materialbox();
+	$('.scrollspy').scrollSpy();
 
 	//$(".owl-carousel").owlCarousel({
 
