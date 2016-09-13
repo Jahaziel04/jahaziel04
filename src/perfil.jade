@@ -1,0 +1,21 @@
+doctype html
+html(lang="es")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		title Guia
+		meta(name="description" content="")
+		meta(author="Jahaziel Ortiz Barrios")
+		link(rel="icon", type="image/png" href="/img/favicon-logo.jpg")
+		link(rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons")
+		link(rel="stylesheet", href="./css/main.css")
+
+	body
+		include ./index/header/template.jade
+
+		include ./perfil/seccion1/template.jade
+
+		script(type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js")
+		
+		script(src="./js/bundle.js")

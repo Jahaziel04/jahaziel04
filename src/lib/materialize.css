@@ -3368,6 +3368,9 @@ nav ul a span.badge {
   margin: 0 auto;
   justify-content: center;
 }
+.centro{
+  margin: 0 auto;
+}
 
 .left {
   float: left !important;
@@ -3439,8 +3442,8 @@ input[type=range] + .thumb {
 }
 
 .section {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .section.no-pad {
