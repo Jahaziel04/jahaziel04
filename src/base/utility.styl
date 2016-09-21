@@ -19,7 +19,10 @@
 	max-width 300px
 .img-mailbox
 	max-width: 238px
-
+.img-guide
+	width: 100%
+	max-width 514px
+	
 ////////////////////////
 
 
@@ -65,6 +68,7 @@
 				background-size: 596px, 47px
 				background-position right -7px, center -3px
 			
+
 	&-two
 		display: block
 		background-image: url(../img/graph-decoration.png)
@@ -139,6 +143,20 @@
 		display none
 		@media only screen and (min-width:1024px)
 			display block
+			
+.guia
+	&-dos
+		background-image: url(../img/one-page.png)
+		background-repeat no-repeat
+		background-position 172px 189px
+		background-size: 300px
+		@media only screen and (min-width:520px)
+			background-position 100% 135px
+
+			@media only screen and (min-width:720px)
+				background-position 100% 100px
+				@media only screen and (min-width:720px)
+					background-position 103% 9px
 
 ///////////////////////////
 .line-style
@@ -148,7 +166,11 @@
 	padding 0 33px 0 10px
 	margin-top 6px
 
-		
+@media only screen and (min-width:720px)
+	.movement-fix
+		position absolute
+		top -91px
+
 ///////////////////////////
 
 .collapsible
