@@ -85,7 +85,8 @@
 		background-size: 12%
 		padding 20px 0
 
-
+///////    PERFIL    //////
+///////////////////////////
 .perfil
 	&-uno
 		padding-bottom 1px
@@ -143,7 +144,36 @@
 		display none
 		@media only screen and (min-width:1024px)
 			display block
-			
+
+///////     GUIA     //////
+///////////////////////////
+
+.azul-marino
+	color #082e41
+.azul-alt
+	color #28a9f4
+	
+
+
+.flex
+	display flex
+	height 60px
+	flex-direction column
+	justify-content center
+.block
+	display block
+
+
+.fila
+	background-color #f2f2f2
+	margin .5em 0
+	&-gris
+		background-color #f5f5f5
+		margin .5em 0
+	&:nth-child(odd)
+		background-color red
+		
+
 .guia
 	&-dos
 		background-image: url(../img/one-page.png)
@@ -160,6 +190,47 @@
 					background-size: 350px
 					@media only screen and (min-width:1200px)
 						background-position 93% 9px
+	
+	&-titulo
+		font-size 34px
+	&-subtitulo
+		font-size 16px
+	&-head
+		&,
+		&--trans,
+		&--azul,
+		&--azul2,
+		&--simple
+			//background-color #f2f2f2
+			display flex
+			height 60px
+			min-height 90px
+			align-items center
+			text-align center
+			justify-content center
+			margin 1em 0
+			
+		&--trans
+				background-color transparent
+		&--azul
+			background-color #28a9f4
+			color white
+			border-radius 5px 5px 0 0
+		&--azul2
+			background-color #00a9e0
+			color white
+			border-radius 5px 5px 0 0
+		&--simple
+			align-items left
+			text-align left
+			justify-content flex-end
+	&-text
+		padding 0 1em 0 !important
+		text-align right
+
+
+
+
 
 ///////////////////////////
 .line-style

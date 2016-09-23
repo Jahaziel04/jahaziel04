@@ -1,3 +1,49 @@
+.guia
+	&-titulo
+		font-size 34px
+	&-subtitulo
+		font-size 16px
+	&-head
+		&,
+		&--trans,
+		&--azul,
+		&--azul2
+			//background-color #f2f2f2
+			display flex
+			height 60px
+			min-height 90px
+			align-items center
+			text-align center
+			justify-content center
+			margin 1em 0
+			
+		&--trans
+				background-color transparent
+		&--azul
+			background-color #28a9f4
+			color white
+			border-radius 5px 5px 0 0
+		&--azul2
+			background-color #00a9e0
+			color white
+			border-radius 5px 5px 0 0
+	&-text
+		padding 0 1em 0 !important
+.fila
+	//border-bottom 1px solid #28a9f4
+	background-color #f2f2f2
+	margin .5em 0
+	&:nth-child(odd)
+		background-color #f5f5f5
+///FIX
+.flex
+	display flex
+	height 60px
+	flex-direction column
+	justify-content center
+.block
+	display block
+///Etiquetes
 .tag
 	&,
 	&-azul,
@@ -30,7 +76,7 @@
 			border none
 			border-radius 1px 1px 4px
 			color white
-			background-color: gris
+			background-color: #28a9f4
 			-webkit-transform: rotateY(1deg) rotateZ(-45deg)
 			transform rotateY(1deg) rotateZ(-45deg)
 		&::after
@@ -58,7 +104,7 @@
 		background-color blue
 	&-rosa
 		color white
-		background-color rosa
+		background-color #28a9f4
 
 .circle
 	&,
