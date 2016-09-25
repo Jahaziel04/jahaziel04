@@ -2,10 +2,10 @@
 
 
 ////// IMG SIZE ////////
-////////////////////////	
+////////////////////////
 .img-full
 	width: 100%
-///img-25 uso unico para el logo de los tres lenguajes	
+///img-25 uso unico para el logo de los tres lenguajes
 .img-25
 	width: 25%
 	@media only screen and (min-width:1025px)
@@ -22,7 +22,7 @@
 .img-guide
 	width: 100%
 	max-width 514px
-	
+
 ////////////////////////
 
 
@@ -30,7 +30,7 @@
 	display: flex
 	align-items center
 
-	
+
 
 .relative
 	position: relative
@@ -46,7 +46,7 @@
 	overflow hidden
 	@media only screen and (min-width:1025px)
 		display block
-	
+
 
 /////// LANDING-PAGE //////
 ///////////////////////////
@@ -67,7 +67,7 @@
 				background-image: url(../img/landing-desk-big.png), url(../img/icon-pendant.png)
 				background-size: 596px, 47px
 				background-position right -7px, center -3px
-			
+
 
 	&-two
 		display: block
@@ -76,7 +76,7 @@
 		background-position 100% bottom
 		background-size: 100%
 		padding 20px 0
-	
+
 	&-three
 		display block
 		background-image: url(../img/graph-decoration-up.png)
@@ -136,7 +136,7 @@
 			margin-bottom -5px
 			@media only screen and (min-width:1160px)
 				max-width 1000px
-		
+
 	&-logo
 		width 50px
 		height 50px
@@ -152,7 +152,7 @@
 	color #082e41
 .azul-alt
 	color #28a9f4
-	
+
 
 
 .flex
@@ -172,7 +172,7 @@
 		margin .5em 0
 	&:nth-child(odd)
 		background-color red
-		
+
 
 .guia
 	&-dos
@@ -190,9 +190,26 @@
 					background-size: 350px
 					@media only screen and (min-width:1200px)
 						background-position 93% 9px
-	
-	&-titulo
-		font-size 34px
+
+	&-tres
+		display: block;
+		padding: 1em 0;
+		background-repeat: no-repeat
+		@media only screen and (min-width:720px)
+			background-size: 47px
+			background-position: 90% top
+			background-image: url(../img/icon-pendant.png)
+			@media only screen and (min-width:1025px)
+				background-image: url(../img/montain.png), url(../img/icon-pendant.png)
+				background-size: 596px, 47px
+				background-position right 29px, 64% 0px
+				@media only screen and (min-width:1300px)
+					background-image: url(../img/montain.png), url(../img/icon-pendant.png)
+					background-size: 596px, 47px
+					background-position right 29px, 64% 0px
+
+
+
 	&-subtitulo
 		font-size 16px
 	&-head
@@ -200,7 +217,9 @@
 		&--trans,
 		&--azul,
 		&--azul2,
-		&--simple
+		&--simple,
+		&--azulX,
+		&--azul2X
 			//background-color #f2f2f2
 			display flex
 			height 60px
@@ -209,26 +228,48 @@
 			text-align center
 			justify-content center
 			margin 1em 0
-			
+
 		&--trans
 				background-color transparent
 		&--azul
-			background-color #28a9f4
-			color white
-			border-radius 5px 5px 0 0
+			background-color #03a9fa
+			color white !important
+			border-radius 12px 12px 0 0
+			min-height 60px
 		&--azul2
-			background-color #00a9e0
+			background-color #32c1ed
 			color white
-			border-radius 5px 5px 0 0
+			border-radius 12px 12px 0 0
+			min-height 60px
 		&--simple
 			align-items left
 			text-align left
 			justify-content flex-end
+		&--azulX
+			background-color #03a9fa
+			color white !important
+			border-radius 0 0 12px 12px
+			min-height: 45px
+		&--azul2X
+			background-color #32c1ed
+			color white
+			border-radius 0 0 12px 12px
+			min-height: 45px
 	&-text
 		padding 0 1em 0 !important
 		text-align right
 
-
+	&-flex
+		display inline-flex
+		align-items: center;
+		justify-content: center;
+		margin-right: 16px
+		.icon-stack
+			font-size 30px
+			color: white
+		.icon-looks_1
+			font-size 29px
+			color: white
 
 
 
@@ -272,7 +313,7 @@ ul.section.table-of-contents.pinned
 	max-width 400px
 .sin-boxshadow
 	box-shadow none
-	
+
 
 
 ////////////Usalo en todos lados/////////////
@@ -292,14 +333,13 @@ ul.section.table-of-contents.pinned
 	@media only screen and (max-width:720px)
 		min-height 1px
 		padding-top 15px
-	
+
 //////////////////////////////////////////////
 .mar-sides
 	margin-right 10px
 	margin-left 10%
 .margin-tb
 	margin 20px 0
-	
+
 .border-r
 	border-radius 5px
-
