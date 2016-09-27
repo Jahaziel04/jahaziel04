@@ -173,13 +173,13 @@
 	&:nth-child(odd)
 		background-color red
 
-
 .guia
 	&-dos
 		background-image: url(../img/one-page.png)
 		background-repeat no-repeat
 		background-position 172px 189px
 		background-size: 300px
+		background-color: #f5f5f5
 		@media only screen and (min-width:520px)
 			background-position 100% 135px
 
@@ -211,7 +211,25 @@
 
 
 	&-subtitulo
-		font-size 16px
+		&,
+		&-x
+			&:after
+				content: ""
+				font-size 30px
+				width: 93%
+				height: 3px
+				background-color: #03a9f4
+				display: block
+				margin: 5px auto 0 auto
+		&-x
+			&:after
+				content: ""
+				font-size 30px
+				width: 93%
+				height: 3px
+				background-color: #32c1ed
+				display: block
+				margin: 5px auto 0 auto
 	&-head
 		&,
 		&--trans,
