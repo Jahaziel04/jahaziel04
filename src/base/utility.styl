@@ -123,7 +123,7 @@
 			margin 0
 	&-subtitulo
 		font-size 30px
-		font-weight 400
+		font-weight 300
 		display inline-block
 
 
@@ -153,8 +153,12 @@
 .azul-alt
 	color #28a9f4
 
-
-
+////////DISPLAY
+.inline-block
+	display: inline-block;
+.inline
+	display: inline-block;
+	width: 100%
 .flex
 	display flex
 	height 60px
@@ -163,6 +167,27 @@
 .block
 	display block
 
+
+////////////Usalo en todos lados/////////////
+.block
+	display: block;
+	padding: 1em 0;
+	&-contacto
+		display block
+		padding 1em 0 0 0
+	&-guia
+		display block
+		padding 21px 0 1px 0
+.max-w830
+	max-width 830px
+.min-h121
+	min-height 121px
+	@media only screen and (max-width:720px)
+		min-height 1px
+		padding-top 15px
+
+//////////////////////////////////////////////
+////////
 
 .fila
 	background-color #f2f2f2
@@ -340,25 +365,6 @@ ul.section.table-of-contents.pinned
 
 
 
-////////////Usalo en todos lados/////////////
-.block
-	display: block;
-	padding: 1em 0;
-	&-contacto
-		display block
-		padding 1em 0 0 0
-	&-guia
-		display block
-		padding 21px 0 1px 0
-.max-w830
-	max-width 830px
-.min-h121
-	min-height 121px
-	@media only screen and (max-width:720px)
-		min-height 1px
-		padding-top 15px
-
-//////////////////////////////////////////////
 .mar-sides
 	margin-right 10px
 	margin-left 10%
@@ -366,4 +372,21 @@ ul.section.table-of-contents.pinned
 	margin 20px 0
 
 .border-r
-	border-radius 5px
+	border-radius .5em
+//////////FOOTER////////
+
+
+////////////////////////
+.tab
+	margin-left 1em
+//////////FIX///////////
+//Sin margin bottom
+.f-1
+	margin-bottom: 0
+.f2
+	margin-top: 0
+	margin-bottom: 0
+.f-3
+	padding: 0
+.f-4
+	padding-bottom: 0
