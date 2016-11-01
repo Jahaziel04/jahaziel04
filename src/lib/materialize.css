@@ -4978,7 +4978,7 @@ al tamaño de pantalla
 
 .btn-floating {
   display: inline-block;
-  color: #fff;
+  /*color: #fff;*/
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -4997,7 +4997,7 @@ al tamaño de pantalla
   width: inherit;
   display: inline-block;
   text-align: center;
-  color: #fff;
+  /*color: #fff;*/
   font-size: 1.6rem;
   line-height: 37px;
 }

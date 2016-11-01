@@ -26,6 +26,7 @@
 			color $secundario
 
 ///////Botones del Navegador sub
+//Son las flechas que te envian a otra página justo al final de cada una.
 
 a.button-link
 	display: flex
@@ -46,3 +47,17 @@ a.button-link
 		font-weight: 700
 		font-size: 18px
 		margin-top: 0
+////////Fin de bloque Navegador sub
+
+.circle-button
+	display inline-flex
+	height 65px
+	width 65px
+	border-radius 50%
+	justify-content center
+	align-items center
+	text-align: center
+	//box-shadow 0 2px 2px 0 rgba(0,0,0,0.14),0 1px 5px 0 rgba(0,0,0,0.12),0 3px 1px -2px rgba(0,0,0,0.2)
+	cursor pointer
+	&:hover
+		box-shadow 0 3px 3px 0 rgba(0,0,0,0.14),0 1px 7px 0 rgba(0,0,0,0.12),0 3px 1px -1px rgba(0,0,0,0.2)

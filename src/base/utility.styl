@@ -38,6 +38,16 @@
 .absolute
 	position absolute
 
+///Centrado absoluto y responsive
+///Se coloca por encima del border del contenido la mitad de su tamaño
+.center-absolute
+		margin: 0 auto
+		right: 0
+		left: 0
+		top: -32.5px
+		position: absolute;
+
+
 .fix-lap
 	width: 300px
 	height: 193px
@@ -71,19 +81,20 @@
 
 	&-two
 		display: block
-		background-image: url(../img/graph-decoration.png)
-		background-repeat no-repeat
-		background-position 100% bottom
-		background-size: 100%
+		//background-image: url(../img/graph-decoration.png)
+		//background-repeat no-repeat
+		//background-position 100% bottom
+		//background-size: 100%
 		padding 20px 0
 
 	&-three
 		display block
-		background-image: url(../img/graph-decoration-up.png)
+		background-image: url(../img/graph-decoration-up.png), url(../img/desarrollo-web.png);
 		background-repeat no-repeat
-		background-position left bottom
-		background-size: 12%
+		background-position left bottom,right -7px
+		background-size: 12%, 700px
 		padding 20px 0
+		box-shadow: 0px -1px 40px 0px rgba(0,0,0,.1),0 1px 0px 0 rgba(0,0,0,.15)
 
 ///////    PERFIL    //////
 ///////////////////////////
@@ -347,8 +358,22 @@
 		font-weight 300
 		//margin 1.46rem 0 1.168rem
 		padding 0 1rem 1rem !important
+.collapsible.popout>li
+	box-shadow: 0 2px 2px rgba(0,0,0,.24),0 0px 2px rgba(0,0,0,.12)
+	margin: 0 10px
 
+.collapsible-header
+	border-bottom: 1px solid rgba(221, 221, 221, 0.58)
 
+.collapsible-body
+	border-bottom: 0
+
+.collapsible.popout>li.active
+	box-shadow: 0 2px 6px 0 rgba(0,0,0,.18),0 4px 15px 0 rgba(0,0,0,.15)
+
+.collapsible-text
+	font-weight: 400;
+	color: rgba(68, 68, 68, 0.61)
 
 ///////////////////////////
 ul.section.table-of-contents.pinned
