@@ -218,137 +218,6 @@
 //////////////////////////////////////////////
 ////////
 
-.fila
-	background-color #f2f2f2
-	margin .5em 0
-	&-gris
-		background-color #f5f5f5
-		margin .5em 0
-	&:nth-child(odd)
-		background-color red
-
-.guia
-	&-dos
-		background-image: url(../img/one-page.png)
-		background-repeat no-repeat
-		background-position 195px bottom
-		background-size: 266px
-		background-color: #f5f5f5
-		@media only screen and (min-width:520px)
-			background-position 100% bottom
-			background-size: 266px
-
-			@media only screen and (min-width:720px)
-				background-position 100% 100px
-				@media only screen and (min-width:800px)
-					background-position 103% 9px
-					background-size: 350px
-					@media only screen and (min-width:1200px)
-						background-position 93% 9px
-
-	&-tres
-		display: block;
-		padding: 1em 0;
-		background-repeat: no-repeat
-		@media only screen and (min-width:720px)
-			background-size: 47px
-			background-position: 90% top
-			background-image: url(../img/icon-pendant.png)
-			@media only screen and (min-width:1025px)
-				background-image: url(../img/montain.png), url(../img/icon-pendant.png)
-				background-size: 596px, 47px
-				background-position right 29px, 64% 0px
-				@media only screen and (min-width:1300px)
-					background-image: url(../img/montain.png), url(../img/icon-pendant.png)
-					background-size: 596px, 47px
-					background-position right 29px, 64% 0px
-
-
-
-	&-subtitulo
-		&,
-		&-x
-			font-size: 30px;
-			font-weight: 300;
-			color: #404040;
-			font-family: Roboto;
-			&:after
-				content: ""
-				font-size 30px
-				width: 93%
-				height: 3px
-				background-color: #00a9e0
-				display: block
-				margin: 5px auto 0 auto
-
-		&-x
-			&:after
-				content: ""
-				font-size 30px
-				width: 93%
-				height: 3px
-				background-color: #32c1ed
-				display: block
-				margin: 5px auto 0 auto
-	&-head
-		&,
-		&--trans,
-		&--azul,
-		&--azul2,
-		&--simple,
-		&--azulX,
-		&--azul2X
-			//background-color #f2f2f2
-			display flex
-			height 60px
-			min-height 90px
-			align-items center
-			text-align center
-			justify-content center
-			margin 1em 0
-
-		&--trans
-				background-color transparent
-		&--azul
-			background-color #03a9fa
-			color white !important
-			border-radius 12px 12px 0 0
-			min-height 60px
-		&--azul2
-			background-color #32c1ed
-			color white
-			border-radius 12px 12px 0 0
-			min-height 60px
-		&--simple
-			align-items left
-			text-align left
-			justify-content flex-end
-		&--azulX
-			background-color #03a9fa
-			color white !important
-			border-radius 0 0 12px 12px
-			min-height: 45px
-		&--azul2X
-			background-color #32c1ed
-			color white
-			border-radius 0 0 12px 12px
-			min-height: 45px
-	&-text
-		padding 0 1em 0 !important
-		text-align right
-
-	&-flex
-		display inline-flex
-		align-items: center;
-		justify-content: center;
-		margin-right: 16px
-		.icon-stack
-			font-size 30px
-			color: white
-		.icon-looks_1
-			font-size 29px
-			color: white
-
 
 
 ///////////////////////////
@@ -459,3 +328,12 @@ ul.section.table-of-contents.pinned
 		margin 0
 		@media only screen and (min-width:720px)
 			margin 2.5% 0 2.5% 0
+.f-6
+	margin-top 100px
+.f-7
+	margin: 100px
+	@media only screen and (min-width:1024px)
+		margin-top: -200px
+.idfeatures
+	@media only screen and (min-width:1024px)
+		display: none

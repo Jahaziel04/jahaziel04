@@ -75,6 +75,17 @@
 	min-width 162px
 	@media only screen and (min-width:500px)
 		position absolute
+	&-x
+		display block
+		padding: 11px 36px
+		border-radius: 100px
+		color: white
+		font-size: 16px
+		text-align: center;
+		width 170px
+		min-width 170px
+
+
 
 .circle
 	&,
@@ -85,13 +96,14 @@
 	&--flag,
 	&--absolute,
 	&--center-logo,
-	&--icon-small
+	&--icon-small,
+	&--bulleted
 		align-items center
 		justify-content center
 		overflow hidden
 		border-radius 50%
 	&--small
-		display inline-block
+		display inline-flex
 		width  50px
 		height 50px
 		box-shadow 0 2px 5px 0 rgba(0,0,0,.16),0 2px 10px 0 rgba(0,0,0,.12)
@@ -152,6 +164,13 @@
 		left 0
 		top 43%
 		margin 0 auto
+
+	&--bulleted
+		width 10px
+		height 10px
+		display inline-block
+		margin 8px 16px 1px 0
+		background-color: azul
 .square
 	height 50px
 	width 50px
