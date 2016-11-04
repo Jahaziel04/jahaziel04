@@ -62,6 +62,20 @@
 		color white
 		background-color #28a9f4
 
+.jtag
+	display inline-block
+	text-align center
+	padding 11px 36px
+	border-radius 100px
+	color white
+	font-size 12px
+	position initial
+	right 16px
+	top 8px
+	min-width 162px
+	@media only screen and (min-width:500px)
+		position absolute
+
 .circle
 	&,
 	&--small,
@@ -70,7 +84,8 @@
 	&--avatar,
 	&--flag,
 	&--absolute,
-	&--center-logo
+	&--center-logo,
+	&--icon-small
 		align-items center
 		justify-content center
 		overflow hidden
@@ -88,7 +103,7 @@
 		box-shadow 0 2px 5px 0 rgba(0,0,0,.16),0 2px 10px 0 rgba(0,0,0,.12)
 
 	&--icon
-		display inline-block
+		display inline-flex
 		height 45px
 		width 45px
 
@@ -114,8 +129,13 @@
 			justify-content center
 			span
 				color azul
-
-
+	&--icon-small
+		display inline-flex
+		height 35px
+		width 35px
+		box-shadow 0 1px 1px 0 rgba(0,0,0,.12)
+		min-width: 35px
+		margin: 0 16px 0 0
 
 	&--absolute
 		position absolute
