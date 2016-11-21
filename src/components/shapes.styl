@@ -65,20 +65,25 @@
 .jtag
 	display inline-block
 	text-align center
-	padding 11px 36px
+	padding 11px 12px
 	border-radius 100px
 	color white
 	font-size 12px
 	position initial
 	right 16px
 	top 8px
-	min-width 162px
+	min-width 115px
 	@media only screen and (min-width:500px)
 		position absolute
+		@media only screen and (min-width:1024px)
+			position: initial
+			@media only screen and (min-width:1270px)
+				position: absolute
+
 	&-x
 		display block
 		padding: 11px 36px
-		border-radius: 100px
+		border-radius: 15px
 		color: white
 		font-size: 16px
 		text-align: center;
